@@ -2,4 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.write('test')
+data = pd.read_csv('기숙사수용현황분석.csv')
+st.dataframe(data)
+
+st.write('기숙사현황')
